@@ -1,0 +1,81 @@
+<!-- <a href="/">Home</a>
+<a href="/contact">Contact</a>
+<a href="/Login">Login</a> -->
+
+<!-- <form action="xyz">
+    Enroll : <input name="enroll"><br>
+    Name : <input name="name"><br>
+    dept : <input name="dept"> <br>
+
+    <input type="submit">
+</form> -->
+
+
+<!-- <form action="xyz">
+    <input type="submit" name="submit" value="click" >
+</form>
+<form action="xyz" method="post">
+    <input type="submit" name="submit" value="click">
+</form> -->
+
+
+<!-- <form action="xyz" method="get">
+    <input type="radio" name="c1" value="indore"> Indore <br>
+    <input type="radio" name="c1" value="New York"> mew york <br>
+    <input type="radio" name="c1" value="London"> Indore <br>
+    <input type="radio" name="c1" value="Munbai"> Indore <br>
+ <input type="submit" value="click">
+</form> -->
+
+<!-- <form action="xyz" method="post">
+    <input type="radio" name="c1" value="indore"> Indore <br>
+    <input type="radio" name="c1" value="New York"> new york <br>
+    <input type="radio" name="c1" value="London"> Indore <br>
+    <input type="radio" name="c1" value="Munbai"> Indore <br>
+ <input type="submit" value="click">
+</form>
+
+
+<form action="xyz">
+    <input type="enroll" name="Enroll"  required pattern="0827[A-Z]{2}201[0-9]{3}">  square brackets use for range and curly use for the length of the paricular no. or char. in a range means how many char or no. we can hagve-->
+    <!-- <input type="submit" value="click">
+</form>  -->
+
+
+<!-- image -->
+<!-- <img src="img11.jpg" width="500"  > -->
+
+<!-- Hello <%=name %> --> 
+
+<!-- has to remove above code to run below code/ of name -->
+<!-- send data in json format -->
+<!-- Enroll = <%=student.enroll %> <br>
+Name = <%=student.name %> <br>
+Dept = <%=student.dept %> -->
+
+<!-- has to remove above code to run below code/ -->
+<table border="2">
+    <tr><th>Enrollment</th>
+        <th>Name</th>
+        <th>Dept</th>
+    </tr>
+
+    <% for(i in student){%>
+
+    <tr>
+        <td><%=student[i].enroll %></td>
+            <td><%=student[i].name %></td>
+                <td><%=student[i].dept %></td>
+    </tr>
+    <% } %>
+
+</table>
+
+<!-- if else statement -->
+<% if(role=="admin"){ %>
+you are admin
+<%
+}
+else{%>
+you are guest 
+<%}%>
